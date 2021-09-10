@@ -6,13 +6,13 @@ import logging
 from sshtunnel import SSHTunnelForwarder
 import paramiko
 
-k = paramiko.RSAKey.from_private_key_file("/Users/jayelms/.ssh/mw-core-temp-lon-dev")
+k = paramiko.RSAKey.from_private_key_file("####")
 
-ssh_host = 'ec2-52-56-48-193.eu-west-2.compute.amazonaws.com'
-ssh_username = 'ec2-user'
+ssh_host = 'e#####'
+ssh_username = '####'
 ssh_password = k,
-database_username = 'jay_elms'
-database_password = 'ZoveED3uRgPgg3dKdm,eYeUac6MTUEg'
+database_username = '#####
+database_password = '#####'
 
 
 def open_ssh_tunnel(verbose=False):
