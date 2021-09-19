@@ -5,14 +5,16 @@ import pandas as pd
 import logging
 from sshtunnel import SSHTunnelForwarder
 import paramiko
+from dotenv import load_dotenv
+import os
 
-k = paramiko.RSAKey.from_private_key_file("####")
-
-ssh_host = 'e#####'
-ssh_username = '####'
+load_dotenv()
+k = paramiko.RSAKey.from_private_key_file(os.getenv('PATH'))
+ssh_host = os.getenv('ssh_host')
+ssh_username = os.getenv('ssh_username')
 ssh_password = k,
-database_username = '#####
-database_password = '#####'
+database_username = os.getenv('database_username')
+database_password = os.getenv('database_password')
 
 
 def open_ssh_tunnel(verbose=False):

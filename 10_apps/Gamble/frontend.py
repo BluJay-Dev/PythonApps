@@ -12,8 +12,6 @@ delete
 close
 """
 
-text = "hello"
-text = text.upp
 
 import tkinter as tk
 import backend
