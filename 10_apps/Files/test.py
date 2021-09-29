@@ -2,7 +2,7 @@
 Python Challenges
 Author: BluJayThomas, updated 'Daily'
 """
-
+import os
 """
 capital_indexes
 Author: BluJayThomas, updated 'Daily'
@@ -213,11 +213,100 @@ Triple True
 #
 # triple_and(True, False, True)
 
-def zap(s, f):
-    print(s, f)
+# def zap(s, f):
+#     print(s, f)
+#
+#
+# zap(
+#     [0, 1, 2, 3],
+#     [5, 6, 7, 8]
+# )
+# def greeter(g):
+#     return f'Hi {g}'
+#
+#
+# greeter("Jay")
+#
+#
+# def greeter(g):
+#     return 'Hi %s' % g.title()
+#
+#
+# greeter('jay')
+#
+# def zero(z):
+#     return [i if not isinstance(i, str) else 0 for i in z]
+#
+#
+# zero([99, 'no data', 95, 94, 'no data'])
+
+# def sum_up(lst):
+#     new_list = []
+#     for item in lst:
+#         new_list.append(float(item))
+#     print(sum(new_list))
+#     return sum(new_list)
+#
+#
+# sum_up(['1.2', '2.6', '3.3'])
 
 
-zap(
-    [0, 1, 2, 3],
-    [5, 6, 7, 8]
-)
+# def stri(*args):
+#     new_list = []
+#     result = list([*args])
+#     for item in result:
+#         new_item = str.upper(item)
+#         new_list.append(new_item)
+#         new_list.sort()
+#     print(new_list)
+#
+#
+# stri("snow", "glacier", "iceberg")
+
+
+# def find_sum(**kwargs):
+#     return sum(kwargs.values())
+#
+#
+# print(find_sum(x=2, y=7))
+# file = open('bear.txt')
+# print(file.read(90))
+
+# file = open('snail.txt', "x")
+# file.write("snail")
+# file.close()
+# f = open('snail.txt', 'r')
+# print(f.read())
+
+# file = open('first.txt', 'x')
+# f = open('bear.txt', 'r')
+# file.write(f.read(90))
+# print(file.read())
+
+# with open('bear1.txt', 'r') as bear1:
+#     text = bear1.read()
+#
+# with open('bear2.txt', 'a') as bear2:
+#     bear2.write(text)
+#
+# with open('data.txt', 'r') as data:
+#     text = data.read()
+#
+# with open('data.txt', 'a') as data:
+#     for i in range(1, 3):
+#         data.write(text)
+#
+# def accum(s):
+#     # your code
+#     for i in s:
+#         if isinstance(i, str):
+#             k = i.title()
+#             return k
+#         else:
+#             exit()
+#
+#
+# accum("abcd")
+
+dic = {'name': 'Kiera', 'feet': 'hairy'}
+print(dic.keys())
